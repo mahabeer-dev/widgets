@@ -107,11 +107,7 @@ export default function HomePage() {
               title="Copy & Paste"
               description="Grab the code you need with a single click. No complex setup or configuration required."
             />
-            <FeatureCard
-              icon={<Package className="h-6 w-6" />}
-              title="npm Package"
-              description="Install the entire library via npm for seamless integration with your existing workflow."
-            />
+
             <FeatureCard
               icon={<Zap className="h-6 w-6" />}
               title="Tree-shakeable"
