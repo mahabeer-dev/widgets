@@ -137,22 +137,22 @@ export default function HomePage() {
           </p>
           <div className="mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {[
-              "3D Hero",
-              "Gradient Hero",
-              "Particles Hero",
-              "Feature Grid",
-              "Pricing",
-              "Testimonials",
-              "Team",
-              "CTA Banner",
+              { name: "3D Hero", slug: "hero-3d" },
+              { name: "Gradient Hero", slug: "hero-gradient" },
+              { name: "Particles Hero", slug: "hero-particles" },
+              { name: "Feature Grid", slug: "features-bento" },
+              { name: "Pricing", slug: "pricing" },
+              { name: "Testimonials", slug: "testimonials" },
+              { name: "Team", slug: "team" },
+              { name: "CTA Banner", slug: "cta" },
             ].map((section) => (
               <Link
-                key={section}
-                href={`/sections/${section.toLowerCase().replace(/ /g, "-").replace("3d", "hero-3d").replace("gradient", "hero-gradient").replace("particles", "hero-particles").replace("feature-grid", "features-bento")}`}
+                key={section.slug}
+                href={`/sections/${section.slug}`}
                 className="group rounded-lg border border-border bg-card p-6 transition-all hover:border-foreground/20 hover:shadow-md"
               >
                 <h3 className="font-semibold group-hover:text-primary transition-colors">
-                  {section}
+                  {section.name}
                 </h3>
                 <p className="mt-1 text-sm text-muted-foreground">
                   View section
