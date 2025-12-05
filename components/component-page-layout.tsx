@@ -23,7 +23,7 @@ export function ComponentPageLayout({ name, description, children }: ComponentPa
               Components
             </Link>
             <a
-              href="https://github.com/your-username/my-widgets"
+              href="https://github.com/mahabeer-dev/widgets.git"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"

@@ -26,7 +26,7 @@ export default function HomePage() {
               Sections
             </Link>
             <a
-              href="https://github.com/your-username/my-widgets"
+              href="https://github.com/mahabeer-dev/widgets.git"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
@@ -210,7 +210,7 @@ export default function HomePage() {
           <p>Built with Next.js, React, and TypeScript.</p>
           <p className="mt-2">
             Open source on{" "}
-            <a href="https://github.com/your-username/my-widgets" className="underline hover:text-foreground">
+            <a href="https://github.com/mahabeer-dev/widgets.git" className="underline hover:text-foreground">
               GitHub
             </a>
           </p>

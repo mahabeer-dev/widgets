@@ -13,7 +13,9 @@
     },
     "./styles.css": "./dist/styles.css"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "sideEffects": false,
   "scripts": {
     "build": "tsup",
@@ -31,11 +33,17 @@
     "tsup": "^8.3.5",
     "typescript": "^5.7.0"
   },
-  "keywords": ["react", "components", "ui", "widgets", "typescript"],
+  "keywords": [
+    "react",
+    "components",
+    "ui",
+    "widgets",
+    "typescript"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/my-widgets"
+    "url": "https://github.com/mahabeer-dev/widgets.git"
   },
   "publishConfig": {
     "access": "public"
