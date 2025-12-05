@@ -29,7 +29,7 @@ export function TeamSection() {
         <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {team.map((member) => (
             <div key={member.name} className="group rounded-2xl border border-white/10 bg-white/5 p-6 text-center">
-              <img src={member.avatar || "/placeholder.svg"} className="mx-auto h-32 w-32 rounded-full object-cover" />
+              <img src={member.avatar || "/placeholder.svg"} alt={member.name} className="mx-auto h-32 w-32 rounded-full object-cover" />
               <h3 className="mt-6 text-lg font-semibold text-white">{member.name}</h3>
               <span className="inline-block rounded-full bg-indigo-500/10 px-3 py-1 text-xs text-indigo-400">
                 {member.role}

@@ -15,6 +15,29 @@ import {
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-background">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: "M-widgets",
+            url: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
+            logo: "/icon.svg",
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: "M-widgets",
+            url: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
+          }),
+        }}
+      />
       {/* Header */}
       <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
@@ -43,10 +66,10 @@ export default function HomePage() {
             >
               GitHub
             </a>
-            <Link
-              href="/components"
-              className="inline-flex items-center gap-2 rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors"
-            >
+          <Link
+            href="/components"
+            className="inline-flex items-center gap-2 rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors"
+          >
               Get Started
               <ArrowRight className="h-4 w-4" />
             </Link>

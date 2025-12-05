@@ -38,7 +38,7 @@ export function TestimonialsSection() {
             "{testimonials[current].content}"
           </blockquote>
           <div className="mt-8 flex items-center gap-4">
-            <img src={testimonials[current].avatar || "/placeholder.svg"} className="h-12 w-12 rounded-full" />
+            <img src={testimonials[current].avatar || "/placeholder.svg"} alt={String(testimonials[current].name)} className="h-12 w-12 rounded-full" />
             <div>
               <div className="font-semibold text-white">{testimonials[current].name}</div>
               <div className="text-sm text-zinc-400">{testimonials[current].role}</div>
