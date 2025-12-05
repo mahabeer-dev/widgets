@@ -87,7 +87,7 @@ export default function PricingPage() {
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
           <Link href="/" className="flex items-center gap-2 font-semibold">
             <Logo3D className="h-6 w-6" />
-            <span>my-widgets</span>
+            <span>M-widgets</span>
           </Link>
           <nav className="flex items-center gap-6">
             <Link

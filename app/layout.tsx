@@ -8,12 +8,12 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "my-widgets - Beautiful React Component Library",
+  title: "M-widgets - Beautiful React Component Library",
   description:
     "A collection of beautifully crafted, accessible React components. Browse, preview, copy the code, or install via npm.",
   generator: "v0.app",
   keywords: ["react", "components", "ui", "widgets", "typescript", "tailwindcss"],
-  authors: [{ name: "my-widgets" }],
+  authors: [{ name: "M-widgets" }],
   icons: {
     icon: [
       {

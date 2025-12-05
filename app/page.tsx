@@ -20,7 +20,7 @@ export default function HomePage() {
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
           <Link href="/" className="flex items-center gap-2 font-semibold">
             <Logo3D className="h-6 w-6" />
-            <span>my-widgets</span>
+            <span>M-widgets</span>
           </Link>
           <nav className="flex items-center gap-6">
             <Link
@@ -92,7 +92,7 @@ export default function HomePage() {
       {/* Features */}
       <section className="border-t border-border bg-muted/30 py-24">
         <div className="mx-auto max-w-6xl px-4">
-          <h2 className="text-center text-3xl font-bold">Why my-widgets?</h2>
+          <h2 className="text-center text-3xl font-bold">Why M-widgets?</h2>
           <p className="mt-4 text-center text-muted-foreground">
             Everything you need to build modern React applications
           </p>
