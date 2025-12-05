@@ -1,5 +1,5 @@
 {
-  "name": "@my-widgets/ui",
+  "name": "@mahabeer-dev/widgets-ui",
   "version": "1.0.0",
   "description": "A beautiful, production-ready React component library",
   "main": "./dist/index.js",

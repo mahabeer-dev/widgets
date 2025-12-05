@@ -48,21 +48,7 @@ export function ComponentPageLayout({ name, description, children }: ComponentPa
           <p className="mt-4 text-lg text-muted-foreground">{description}</p>
         </div>
 
-        {/* Installation */}
-        <section className="mt-12">
-          <h2 className="text-2xl font-semibold">Installation</h2>
-          <div className="mt-4 overflow-hidden rounded-xl border border-border bg-zinc-950 p-4">
-            <code className="text-sm text-zinc-100">npm install @my-widgets/ui</code>
-          </div>
-        </section>
 
-        {/* Usage */}
-        <section className="mt-12">
-          <h2 className="text-2xl font-semibold">Usage</h2>
-          <div className="mt-4 overflow-hidden rounded-xl border border-border bg-zinc-950 p-4">
-            <code className="text-sm text-zinc-100">{`import { ${name} } from "@my-widgets/ui"`}</code>
-          </div>
-        </section>
 
         {children}
       </main>

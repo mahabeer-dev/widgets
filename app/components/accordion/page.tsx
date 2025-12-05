@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import { ComponentPageLayout } from "@/components/component-page-layout"
-import { CodePreview } from "@/components/code-preview"
-import { PropsTable } from "@/components/props-table"
+import { ComponentPageLayout } from "@/components/component-page-layout";
+import { CodePreview } from "@/components/code-preview";
+import { PropsTable } from "@/components/props-table";
 
 const accordionCode = `function Demo() {
   const [openItems, setOpenItems] = React.useState(['item-1'])
@@ -41,20 +41,26 @@ const accordionCode = `function Demo() {
             <polyline points="6 9 12 15 18 9" />
           </svg>
         </button>
-        {openItems.includes('item-2') && (
-          <div className="pb-4 text-sm text-zinc-600">
-            Run npm install @my-widgets/ui to get started.
-          </div>
-        )}
+        
       </div>
     </div>
   )
-}`
+}`;
 
 const accordionProps = [
-  { name: "multiple", type: "boolean", default: "false", description: "Allow multiple items to be open" },
-  { name: "defaultValue", type: "string[]", default: "[]", description: "Default open items" },
-]
+  {
+    name: "multiple",
+    type: "boolean",
+    default: "false",
+    description: "Allow multiple items to be open",
+  },
+  {
+    name: "defaultValue",
+    type: "string[]",
+    default: "[]",
+    description: "Default open items",
+  },
+];
 
 export default function AccordionPage() {
   return (
@@ -75,5 +81,5 @@ export default function AccordionPage() {
         <PropsTable props={accordionProps} />
       </section>
     </ComponentPageLayout>
-  )
+  );
 }

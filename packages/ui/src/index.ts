@@ -1,5 +1,5 @@
 /**
- * @my-widgets/ui - A beautiful, production-ready React component library
+ * @mahabeer-dev/widgets-ui - A beautiful, production-ready React component library
  * @packageDocumentation
  */
 

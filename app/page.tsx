@@ -1,6 +1,15 @@
-import type React from "react"
-import Link from "next/link"
-import { ArrowRight, Package, Copy, Eye, Zap, Code2, Blocks, Layout } from "lucide-react"
+import type React from "react";
+import Link from "next/link";
+import {
+  ArrowRight,
+  Package,
+  Copy,
+  Eye,
+  Zap,
+  Code2,
+  Blocks,
+  Layout,
+} from "lucide-react";
 
 export default function HomePage() {
   return (
@@ -52,11 +61,13 @@ export default function HomePage() {
             <span>v1.0.0 now available</span>
           </div>
           <h1 className="text-balance text-5xl font-bold tracking-tight sm:text-6xl">
-            Beautiful React widgets, <span className="text-muted-foreground">ready to use</span>
+            Beautiful React widgets,{" "}
+            <span className="text-muted-foreground">ready to use</span>
           </h1>
           <p className="mt-6 text-pretty text-lg text-muted-foreground">
-            A collection of beautifully crafted, accessible React components and full sections. Browse, preview, copy
-            the code, or install via npm. Build faster with production-ready widgets.
+            A collection of beautifully crafted, accessible React components and
+            full sections. Browse, preview, copy the code, or install via npm.
+            Build faster with production-ready widgets.
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <Link
@@ -73,10 +84,6 @@ export default function HomePage() {
               <Layout className="h-4 w-4" />
               Browse Sections
             </Link>
-          </div>
-          <div className="mt-6 flex items-center justify-center gap-2 rounded-md border border-border bg-muted px-4 py-3 font-mono text-sm">
-            <span className="text-muted-foreground">npm install</span>
-            <span>@my-widgets/ui</span>
           </div>
         </div>
       </section>
@@ -125,7 +132,9 @@ export default function HomePage() {
 
       <section className="py-24">
         <div className="mx-auto max-w-6xl px-4">
-          <h2 className="text-center text-3xl font-bold">Ready-to-Use Sections</h2>
+          <h2 className="text-center text-3xl font-bold">
+            Ready-to-Use Sections
+          </h2>
           <p className="mt-4 text-center text-muted-foreground">
             Full-fledged sections with 3D animations, gradients, and more
           </p>
@@ -145,8 +154,12 @@ export default function HomePage() {
                 href={`/sections/${section.toLowerCase().replace(/ /g, "-").replace("3d", "hero-3d").replace("gradient", "hero-gradient").replace("particles", "hero-particles").replace("feature-grid", "features-bento")}`}
                 className="group rounded-lg border border-border bg-card p-6 transition-all hover:border-foreground/20 hover:shadow-md"
               >
-                <h3 className="font-semibold group-hover:text-primary transition-colors">{section}</h3>
-                <p className="mt-1 text-sm text-muted-foreground">View section</p>
+                <h3 className="font-semibold group-hover:text-primary transition-colors">
+                  {section}
+                </h3>
+                <p className="mt-1 text-sm text-muted-foreground">
+                  View section
+                </p>
               </Link>
             ))}
           </div>
@@ -165,8 +178,12 @@ export default function HomePage() {
       {/* Components Preview */}
       <section className="border-t border-border bg-muted/30 py-24">
         <div className="mx-auto max-w-6xl px-4">
-          <h2 className="text-center text-3xl font-bold">Available Components</h2>
-          <p className="mt-4 text-center text-muted-foreground">22 production-ready components to get you started</p>
+          <h2 className="text-center text-3xl font-bold">
+            Available Components
+          </h2>
+          <p className="mt-4 text-center text-muted-foreground">
+            22 production-ready components to get you started
+          </p>
           <div className="mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {[
               "Button",
@@ -187,8 +204,12 @@ export default function HomePage() {
                 href={`/components/${component.toLowerCase()}`}
                 className="group rounded-lg border border-border bg-card p-6 transition-all hover:border-foreground/20 hover:shadow-md"
               >
-                <h3 className="font-semibold group-hover:text-primary transition-colors">{component}</h3>
-                <p className="mt-1 text-sm text-muted-foreground">View documentation</p>
+                <h3 className="font-semibold group-hover:text-primary transition-colors">
+                  {component}
+                </h3>
+                <p className="mt-1 text-sm text-muted-foreground">
+                  View documentation
+                </p>
               </Link>
             ))}
           </div>
@@ -210,14 +231,17 @@ export default function HomePage() {
           <p>Built with Next.js, React, and TypeScript.</p>
           <p className="mt-2">
             Open source on{" "}
-            <a href="https://github.com/mahabeer-dev/widgets.git" className="underline hover:text-foreground">
+            <a
+              href="https://github.com/mahabeer-dev/widgets.git"
+              className="underline hover:text-foreground"
+            >
               GitHub
             </a>
           </p>
         </div>
       </footer>
     </div>
-  )
+  );
 }
 
 function FeatureCard({
@@ -225,15 +249,17 @@ function FeatureCard({
   title,
   description,
 }: {
-  icon: React.ReactNode
-  title: string
-  description: string
+  icon: React.ReactNode;
+  title: string;
+  description: string;
 }) {
   return (
     <div className="rounded-lg border border-border bg-card p-6">
-      <div className="mb-4 inline-flex rounded-md bg-primary/10 p-2 text-primary">{icon}</div>
+      <div className="mb-4 inline-flex rounded-md bg-primary/10 p-2 text-primary">
+        {icon}
+      </div>
       <h3 className="font-semibold">{title}</h3>
       <p className="mt-2 text-sm text-muted-foreground">{description}</p>
     </div>
-  )
+  );
 }
