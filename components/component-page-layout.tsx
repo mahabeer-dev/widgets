@@ -1,6 +1,7 @@
 import type React from "react"
 import Link from "next/link"
-import { ArrowLeft, Blocks } from "lucide-react"
+import { ArrowLeft } from "lucide-react"
+import Logo3D from "@/components/logo-3d"
 
 interface ComponentPageLayoutProps {
   name: string
@@ -15,7 +16,7 @@ export function ComponentPageLayout({ name, description, children }: ComponentPa
       <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
           <Link href="/" className="flex items-center gap-2 font-semibold">
-            <Blocks className="h-6 w-6" />
+            <Logo3D className="h-6 w-6" />
             <span>my-widgets</span>
           </Link>
           <nav className="flex items-center gap-6">

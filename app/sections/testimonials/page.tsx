@@ -1,7 +1,8 @@
 "use client"
 
 import Link from "next/link"
-import { Blocks, ArrowLeft, Copy, Check } from "lucide-react"
+import { ArrowLeft, Copy, Check } from "lucide-react"
+import Logo3D from "@/components/logo-3d"
 import { useState } from "react"
 import { TestimonialsSection } from "@/components/sections/testimonials"
 
@@ -64,7 +65,7 @@ export default function TestimonialsPage() {
       <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
           <Link href="/" className="flex items-center gap-2 font-semibold">
-            <Blocks className="h-6 w-6" />
+            <Logo3D className="h-6 w-6" />
             <span>my-widgets</span>
           </Link>
           <nav className="flex items-center gap-6">
